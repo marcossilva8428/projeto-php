@@ -1,0 +1,196 @@
+/*padronizaçãoDaPágina*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/*padronizaçãoDaPágina*/
+
+
+
+
+/*padronizaçãoDaTagAncora*/
+a{
+    color: whitesmoke;
+    text-align: left;
+    text-decoration: none;
+    padding: 20px 10px;
+    font-size: 18px;   
+    margin-left: 45px;
+    display: inline-block;
+}
+/*padronizaçãoDaTagAncora*/
+
+#rodape{
+
+    text-align: center;
+}
+
+/*padronizaçãoDoBody*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+/*padronizaçãoDoBody*/
+
+/*estilizaçãoDoElementoH4*/
+h4{
+
+    color: red;
+}
+/*estilizaçãoDoElementoH4*/
+
+/*estilizaçãoComIdDoMenuSuperior*/
+#menubloco{
+
+    border-color: black;
+    padding: 5px;
+    background-color: #ff0000;
+    text-align: center;
+    height: 60px;
+}
+/*estilizaçãoComIdDoMenuSuperior*/
+
+
+/*logo3dMenuSuperior*/
+.logo3d{
+
+    text-shadow: 
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+    font-size: 29px;
+    
+    padding-top: 5px; 
+}
+/*logo3dMenuSuperior*/
+
+#formas_pagamento{
+    color: red;
+}
+
+
+
+
+/*inicioProdutos*/
+
+li {
+    cursor: pointer;
+}
+
+img.itens {
+
+    cursor: pointer;
+}
+.categorias{
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    width: 20%;
+    height: 1000px;
+    vertical-align: bottom;
+}
+
+.produtos{
+    height: 1000px;
+    width: 79%;
+    display: inline-block;
+    color: black
+}
+
+.produto{
+    margin-left: 200px;
+    background-color: red;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px rgba(0,0,0, 0.5);
+    margin-top: -10px;
+}
+
+.preco{
+    color: red;
+}
+
+/*fimProdutos*/
+
+/*inicioLoja*/
+.grupoLojas{
+
+    height: 1000px;
+    width: 79%;
+    display: inline-block;
+    color: black;
+    text-align: center;
+}
+
+.grupoLoja{
+
+    display: inline-block;
+    font-size: large;
+    border-radius: 5%;
+    text-align: center;
+    width: auto;
+    margin: 12px 0px 0px 32px;
+    padding-left: 20px;
+    
+    
+}
+
+.listNone{
+
+    list-style: none;
+}
+/*fimLoja*/
+
+/*inicioContato*/
+div.container_contatos{
+    text-align: center;
+    margin-top: 50px;
+}
+
+div.email {
+    display: inline-block;
+    text-align: center;
+    margin-left: 100px;
+}
+
+div.zap{
+    display: inline-block;
+    text-align: center;
+}
+
+div.zap img {
+    width: 50px;
+}
+
+div.email img{
+    width: 50px;
+}
+
+form{
+    width: 500px;
+    text-align: center;
+     margin: 0 auto 0 auto;
+}
+
+input.nome{
+    height: 20px;
+}
+
+input.area_texto{
+    height: 200px;
+}
+
+input.enviar{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+}
+/*fimContato*/
