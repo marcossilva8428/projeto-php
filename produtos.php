@@ -51,19 +51,15 @@
 <!-- Fim tabela lateral de categorias -->
 
 <!-- Inicio tabela de produtos-->
-    <div class="produtos">
+   <div class="produtos">
 
-<?php
+        <?php
 
             $sql = "select * from produto";
-    $result = $conn->query($sql);
-
-    if($result->num_rows > 0){
-
-        while($rows = $result->fetch_assoc()){
-        
-
-?>
+            $result = $conn->query($sql);
+            if($result->num_rows > 0){
+            while($rows = $result-> fetch_assoc()){
+        ?>
 
         
         <div class="produto" id="<?php echo $rows["categoria"];?>">
@@ -80,15 +76,15 @@
 
 
     
-<?php
-        }
-    } else {
-        echo "Nenhum produto cadastrado!";
-    }
+        <?php
+                }
+             } else {
+                echo "Nenhum produto cadastrado!";
+             }
 
-?>
+        ?>
 
-</div>
+    </div>
      <!-- Fim tabela de produtos -->
 </main>
 
