@@ -1,0 +1,61 @@
+CREATE DATABASE fseletro
+
+use fseletro
+
+-- criação da tabela 'produto'
+
+CREATE TABLE produto (
+idproduto INT AUTO_INCREMENT PRIMARY KEY,
+data_inclusao DATETIME,
+categoria VARCHAR(45),
+descricao VARCHAR(150),                    
+preco DECIMAL(8,2),
+precofinal DECIMAL(8,2),
+imagem VARCHAR(255),
+);
+
+
+-- Inserindo dados na tabela 'produto'
+
+INSERT INTO produto (categoria, descricao, preco, precofinal, imagem)
+VALUES ('geladeira' , 'Geladeira Frost Free Consul Prata 340 litros', 2086.00, 1910.00, 'imagens/produtos/geladeiraBrastempPrata.jpeg'),
+
+('fogao' , 'Fogao 4 Bocas Consul Inox com Mesa de Vidros', 1200.90, 1129.00, 'imagens/produtos/geladeiraBrastempPrata.jpeg'),
+
+('fogao' , 'Fogao de piso 4 Bocas Brastemp', 600.00, 519.70, 'imagens/produtos/fogaoBrastemp4BocasBranco.jpeg'),
+
+('microondas' , 'Microondas Consul 32 Litros Inox 220V', 1200.98, 1130.00, 'imagens/produtos/microondasConsulPrata.jpeg'),
+
+('microondas' , 'Microondas 25L Espelhado Philco 220V', 508.70, 464.53, 'imagens/produtos/microondasPhilcoPrata.jpeg'),
+					
+('microondas' , 'Forno de Microondas Electrolux 20L Branco', 459.90, 436.05, 'imagens/produtos/microondasEletroluxBranco.jpeg'),
+
+('lava-louca' , 'Lava-Louça Electrolux Inox', 3599.00, 2799.90, 'imagens/produtos/lavaLoucaEletrolux.jpeg'),
+
+('lava-louca' , 'Lava Louça Compacta Brastemp', 1970.50, 1730.61, 'imagens/produtos/lavaLoucaBrastemp.jpeg'),
+
+('lavadora-de-roupa' , 'Lavadora de Roupas Brastemp 11kg', 1699.00, 1214.00, 'imagens/produtos/lavaRoupasEletrolux.jpeg'),
+
+('lavadora-de-roupa' , 'Lavadora de Roupas Philco Inverter 12KG', 2399.00, 2179.00, 'imagens/produtos/lavaSecaRoupasConsul.jpeg');
+
+
+-- criação da tabela 'pedidos'
+
+create table pedidos ( 
+    id_pedidos INTEGER not null, 
+    nome_cliente VARCHAR(40) not null, 
+    endereco VARCHAR(200) not null,
+    nome_produto VARCHAR(100) not null,
+    valor_unitario DECIMAL(8,2) not null,
+    quantidade INTEGER not null,
+    valor_total DECIMAL(8,2) not null,
+    primary key (id_pedidos) 
+    );
+    
+    ALTER TABLE `fseletro`.`pedidos` 
+CHANGE COLUMN `id_pedidos` `id_pedidos` INT(11) NOT NULL AUTO_INCREMENT ;
+
+insert into fseletro.pedidos(nome_cliente,endereco,nome_produto,valor_unitario,quantidade,valor_total)
+values('Marcos Silva','Rua A bairro flores', 'Geladeira Frost Free Consul Prata 340 litros',1910.00,1,1910.00),
+	  ('Jovino Ramos','Rua b bairro palmares', 'Consul Inox com Mesa de Vidro',1129.00,1,1129.00),
+      ('Madalena Macanoel','Rua c bairro dos patriarcas', 'Forno de Microondas Electrolux 20L Branco',436.05,1,436.05);
